@@ -25,7 +25,7 @@ Some uses Mockito as a means to verify interactions
 Below is a comprehensive example using Mockito
 http://www.vogella.com/tutorials/Mockito/article.html
 
-# How to
+# How to
 It is strongly advised to use Intellij Community Edition since Maven is embedded to build the jar.
 The jar is runnable since the main class is specified in the manifest.
 The Main class is runnable with your IDE, feel free to use it.
