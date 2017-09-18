@@ -34,6 +34,6 @@ After cloning this repository,
 create your branch with your name in the branch name:
 git checkout -b topic/test-{YOUR_NAME}
 
-After pushing your branch, please add florian.schmidt@simplifia.fr as reviewer
+After pushing your branch, please add florian.schmidt@simplifia.fr as reviewer.
 
 
