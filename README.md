@@ -33,7 +33,6 @@ The Main class is runnable with your IDE, feel free to use it.
 After cloning this repository,
 create your branch with your name in the branch name:
 git checkout -b topic/test-{YOUR_NAME}
+Please commit every 30 minutes so we can see your velocity
 
 After pushing your branch, please add florian.schmidt@simplifia.fr as reviewer.
-
-
