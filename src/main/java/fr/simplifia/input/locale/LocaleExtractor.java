@@ -23,9 +23,8 @@ public class LocaleExtractor {
 
     private static Locale extractLocale(final String input) {
         switch (input) {
-            case "fr":
-                return Locale.FRENCH;
-
+            case  "en":
+                return Locale.ENGLISH;
             default:
                 return null;
 
@@ -33,6 +32,7 @@ public class LocaleExtractor {
     }
 
     private static boolean localeIsValid(Locale result) {
-        return result != null && !isEmpty(result.getLanguage());
+        return result != null && !isEmpty(result.getLanguage()) && StringUtils.indexOf(result.toString(),'é')<0
+                && StringUtils.indexOf(result.toString(),'ê')<0 && StringUtils.indexOf(result.toString(),'è')<0;
     }
 }

@@ -5,7 +5,7 @@ import fr.simplifia.input.validator.SmpInputValidator;
 public class SmpDataTransformer {
 
     private SmpInputValidator validator;
-    private static final String MESSAGE = " : bienvenue chez Simplifia!";
+    private static final String MESSAGE = " : Welcome to Simplifia!";
     public SmpDataTransformer(final SmpInputValidator validator) {
         this.validator = validator;
     }
