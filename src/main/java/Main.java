@@ -1,3 +1,4 @@
+import fr.simplifia.input.exception.InputException;
 import fr.simplifia.input.locale.LocaleExtractor;
 import fr.simplifia.input.validator.SmpInputValidator;
 import fr.simplifia.input.validator.impl.SmpInputValidatorFactory;
@@ -18,11 +19,10 @@ public class Main {
 
         System.out.println("Enter your text : ");
         String input = scanInput.nextLine();
-        while (StringUtils.indexOf(input,'é')>0 || StringUtils.indexOf(input,'ê')>0 || StringUtils.indexOf(input,'è')>0)
+        if (StringUtils.indexOf(input,'é')>=0 || StringUtils.indexOf(input,'ê')>=0 || StringUtils.indexOf(input,
+                'è')>=0)
         {
-            System.out.println("Text is invalid, Enter your text again : ");
-            input = scanInput.nextLine();
-
+            throw new InputException("given text character is not handled");
         }
         scanInput.close();
 
